@@ -27,7 +27,7 @@ export default function StockApp() {
         </thead>
         <tbody>
           {stockData.map((elem) => (
-            <tr>
+            <tr key={elem.date}>
               <td>{elem.date}</td>
               <td>{elem.tradePrice}</td>
               <td>{elem.openingPrice}</td>
